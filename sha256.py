@@ -17,7 +17,7 @@ def check_password(stored_password, user_password):
     password_hash = binascii.hexlify(password_hash).decode('ascii')
     return password_hash == stored_password
 
-stored_password = hash_password("The Target Is You ")
+stored_password = hash_password("Put Your Plan Text  ")
 print(stored_password)
 print(check_password(stored_password,'MyPassword'))
 print(check_password(stored_password,'MyPassword'))
